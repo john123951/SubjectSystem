@@ -1,0 +1,24 @@
+<!--pages/examtips/examtips.wxml-->
+<view class='main'>
+    <view class='main-images'>
+      <image src='../../images/icon/test.png'></image>
+    </view>
+    <view class='main-text'>
+      <text></text>
+    </view>
+
+    <view class='exam-text'>
+      <view class='title'>考试模式\n</view>
+      <view>1.答题时间为1800秒(30分钟),共50道选择题，一题2分\n</view>
+      <view>2.答题期间请勿切换后台，或接听电话，否则系统会判定为作弊行为\n</view>
+      <view>3.不能关闭屏幕，否则系统也会判定为作弊行为，建议把手机设置为勿扰模式，以更好的作答~</view>
+    </view>
+
+    <view class='subjetc-text'>
+      <view class='title'>刷题模式\n</view>
+      <view>1.可随时退出,没有时间的限制，适合小白人群\n</view>
+      <view>2.一共为20道选择题~\n</view>
+    </view>
+</view>
+<button bindtap='exaTest'>考试模式</button>
+<button bindtap='subject'>刷题模式</button>

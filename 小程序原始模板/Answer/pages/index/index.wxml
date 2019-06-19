@@ -1,0 +1,34 @@
+<view class='main-body'>
+  <view class='header'>
+    <view class='user-avatar'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class='user-nick-name'>
+      <open-data type="userNickName"></open-data>
+    </view>
+    <view class='user-tips'>
+      <view></view>
+    </view>
+  </view>
+
+
+
+  <view class='body-wrapper'>
+    <view class='subject-group'>
+      <view class='subject-title'>
+        <view><text>计算机二级</text></view>
+      </view>
+      <view class='subject-list-group'>
+        <view class='subject-type-items'>
+          <view class='image-banner' id="{{items.name}}"  bindtap='clickBtap'>
+            <image src='http://114.115.221.99{{items.image}}'></image>
+          </view>
+          <view class='subject-bank'id="{{items.name}}">
+            <view>题库已有1000道题</view>
+          </view>
+        </view>        
+      </view>   
+    </view>
+  </view>
+
+</view>

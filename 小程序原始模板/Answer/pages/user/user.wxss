@@ -1,0 +1,78 @@
+/**index.wxss**/
+
+page{
+  background: #eeee;
+}
+.user-card-warpper{
+  background: #fff;
+  width: 700rpx;
+  margin: 0 auto;
+  height: 300rpx;
+  margin-top: 20rpx;
+  position: relative;
+  box-shadow:0 3px 5px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  border-radius: 20rpx;
+}
+
+.avatar{
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 20rpx;
+  padding-top: 20rpx;
+  float: left;
+  
+}
+
+.avatar image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2rpx solid #696969;
+  box-shadow:0 3px 5px rgba(0, 0, 0, 0.3);
+
+}
+.username{
+  padding-top: 40rpx;
+}
+.open-username{
+  margin-left: 20rpx;
+}
+.userinfo-group{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 100rpx;
+  padding-left: 20rpx;
+  justify-content: space-between;
+  font-size: 30rpx;
+}
+.yizu{
+  padding-right: 20rpx;
+}
+.false{
+  color:#EE4000;
+}
+.true{
+  color: #90EE90;
+}
+.user-info-wrapper{
+  margin-top: 30rpx;
+}
+.user-exam-items{
+  background: #A4D3EE;
+  color: #fff;
+  width: 86%;
+  margin: 0 auto;
+  box-shadow:0 2px 3px rgba(0, 0, 0, 0.1);
+  padding: 20rpx;
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+}
+.user-exam-items{
+  text-align: center;
+}
+.lineCanvas{
+  margin: 0 auto;
+}

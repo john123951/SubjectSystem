@@ -1,0 +1,30 @@
+<view class='main'>
+  <view class='user-card-warpper'>
+    <view class='avatar'>
+      <image src='http://img0.pconline.com.cn/pconline/1511/29/7257120_901_thumb.jpg'></image>
+    </view>
+    <view class='username'>
+        <open-data class="open-username" type="userNickName"></open-data>
+    </view>
+    <view class='userinfo-group'>
+      <view class='true'>正确率:{{right_worng.right_num}}%</view>
+      <view class='false'>错误率:{{right_worng.wrong_num}}%</view>
+      <view class='yizu'>已作答:{{right_worng.user_subject_sum_nums}}题</view>
+    </view>
+  </view>
+
+  <view class='user-info-wrapper'>
+    <view class='user-exam-items'>
+      <text>我的错题</text>
+    </view>
+    <view class='user-exam-items'>
+      <text>我的收藏</text>
+    </view>
+
+  </view>
+    <canvas canvas-id="lineCanvas" disable-scroll="true" class="lineCanvas"></canvas>
+
+
+
+
+</view>

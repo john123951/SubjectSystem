@@ -1,0 +1,74 @@
+<!--pages/answer/answer.wxml-->
+<view class='main'>
+  <view class='headers-bottom'>
+    <view class='fav-group'>
+      <view class='fav-ico'>
+        <image src='../../images/icon/fav.png' bindtap="favClick"></image><text class='answer'>{{answer}}</text>
+      </view>
+    </view>
+    <view class='tips-group'>
+      <view class='false_tips'>
+        <text>{{false_user}}</text><image src='../../images/icon/false.png'></image>
+      </view>
+
+      <view class='true_tips'>
+        <text>{{true_user}}</text><image src='../../images/icon/true.png'></image>
+      </view>
+    </view>
+
+    <view class='sublimt-inco' bindtap='examSublimt'>
+      <text class='sublimt-text'>交卷</text><image src='../../images/icon/submission.png'></image>
+    </view>
+
+  </view>
+  <view class='sum_items'>
+    题目总数{{sum_items}} <text class='exam_time'>作答时间还剩下{{countDownNum}}秒</text>
+  </view>
+
+  <view class='answer-body'>
+
+    <swiper class='swiper' bindchange="nextlastswiper" current="{{current}}" >
+      <swiper-item wx:for="{{items}}">
+        <scroll-view
+    scroll-y>
+          <view class='answer-subject'>
+            <text>{{index + 1}}.{{item.title}}</text>
+          </view>
+          <view class='answer-choice'>
+            <radio-group class='choice-items' bindchange="radioChange">
+              <label class="radio">
+                <text class='radio-title'>A</text><radio value="A/{{item.id}}/{{index}}"  checked="" class='radio-choice' disabled="{{disabled}}"/><text>{{item.option_a}}</text>
+              </label>
+              <label class="radio">
+                <text class='radio-title'>B</text><radio value="B/{{item.id}}/{{index}}" checked="" class='radio-choice' disabled="{{disabled}}"/><text>{{item.option_b}}</text>
+              </label>
+
+              <label class="radio">
+                <text class='radio-title'>C</text><radio value="C/{{item.id}}/{{index}}" checked="" class='radio-choice' disabled="{{disabled}}"/><text>{{item.option_c}}</text>
+              </label>
+
+              <label class="radio">
+                <text class='radio-title'>D</text><radio value="D/{{item.id}}/{{index}}" checked="" class='radio-choice' disabled="{{disabled}}"/><text>{{item.option_d}}</text>
+              </label>
+
+            </radio-group>
+          </view>
+          <view class="analysis">
+            <text>{{analysis}}</text>
+          </view>
+        </scroll-view>
+      </swiper-item>
+    </swiper>
+
+
+
+    <!-- <view class='last-next-group'>
+        <view class='last'>
+          <image src='../../images/icon/last.png'></image><text>上一道题</text>
+        </view>
+        <view class='next'>
+          <text>下一道题</text><image src='../../images/icon/next.png'></image>
+        </view>
+    </view> -->
+  </view>
+</view>

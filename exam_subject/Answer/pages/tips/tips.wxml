@@ -1,0 +1,10 @@
+<!--pages/tips/tips.wxml-->
+<view class='main'>
+    <view class='main-images'>
+      <image src='{{images}}'></image>
+    </view>
+    <view class='main-text'>
+      <text>{{text}}</text>
+    </view>
+</view>
+<button bindtap='returnIndex'>返回首页</button>

@@ -1,0 +1,116 @@
+/**index.wxss**/
+page{
+  background: #eee;
+}
+
+main-body{
+  width: 100%;
+  height: 100%;
+}
+
+.header{
+  width: 100%;
+  background: #BFEFFF;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 3rpx 5rpx rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.user-avatar{
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 30rpx;
+}
+
+.user-nick-name{
+  color: #000;
+  line-height: 80rpx;
+  margin-left: 20rpx;
+}
+
+.user-tips{
+  line-height: 80rpx;
+  margin-left: 100rpx;
+  font-size: 30rpx;
+}
+
+.body-wrapper{
+  margin-top: 130rpx;
+}
+
+.subject-group{
+  background: #fff;
+  padding-bottom: 20rpx;
+  box-shadow: 0 3rpx 5rpx rgba(0, 0, 0, 0.2);
+  margin-bottom: 50rpx;
+  
+}
+
+.subject-title{
+  border-bottom: 2px dashed #eee;
+  margin-bottom: 10rpx;
+  padding-bottom: 20rpx;
+  border-left: 5px solid #836FFF;
+  
+}
+.subject-title view{
+  height: 64rpx;
+  font-size: 18px;
+  line-height: 84rpx;
+}
+.subject-title view text{
+  line-height: 84rpx;
+  margin-left: 20rpx;
+}
+
+
+.subject-list-group{
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+
+
+.subject-type-items{
+  background: #fff;
+  margin-left: 30rpx;
+  width: 200rpx;
+  height: 250rpx;
+  box-shadow: 0 3rpx 5rpx rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 20rpx;
+  position: relative;
+  margin-right: 10rpx;
+  margin-bottom: 20rpx;
+}
+.image-banner{
+  width: 200rpx;
+  height: 175rpx;
+}
+.image-banner image{
+  width: 100%;
+  height: 100%;
+}
+.subject-bank{
+  background: #A4D3EE;
+  height: 100%;
+}
+.subject-bank view{
+  font-size: 23rpx;
+  color: #fff;
+  padding:10rpx;
+  padding-top: 5rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}

@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/brush/brush",
+    "pages/tips/tips",
+    "pages/examtips/examtips",
+    "pages/answer/answer"
+    
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#BFEFFF",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+    "tabBar": {
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "首页",
+          "iconPath": "images/icon/index1.png",
+          "selectedIconPath": "images/icon/index.png"
+        },
+        {
+          "pagePath": "pages/user/user",
+          "text": "用户",
+          "iconPath": "images/icon/user.png",
+          "selectedIconPath": "images/icon/user1.png"
+        }
+      ]
+    },
+
+
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  }
+
+
+
+}
